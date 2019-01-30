@@ -1,0 +1,1011 @@
+
+
+
+/*STYLE CSS*/
+
+
+
+/*HOME*/
+
+
+/*HEADER*/
+
+body{
+ overflow-x: hidden;  
+}
+header{
+ 
+  position: relative;
+}
+.top-menu-home{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+
+  transition: .5s linear;  
+}
+.top-menu-home a:hover{
+  text-decoration: none;
+}
+.top-menu-home.active{
+  background: #fff; 
+  box-shadow: 0 4px 6px -6px #222;
+}
+.top-menu-home.active nav li a{
+   color: #0b4050;
+   font-weight: bold;
+}
+
+.top-menu-home-left{
+  display: inline-block;
+ 
+}
+
+.top-menu-home-right{
+  display: inline-block;
+  float: right;
+  padding-top: 30px;
+}
+.top-menu-home-right img{
+  width: 38px;
+}
+.top-menu-home .top-menu-home-right .white-icon img{
+  display: inline-block;
+}
+.top-menu-home .top-menu-home-right .blue-icon img{
+  display: none;
+}
+.top-menu-home.active .top-menu-home-right .white-icon img{
+  display: none;
+}
+.top-menu-home.active .top-menu-home-right .blue-icon img{
+  display: inline-block;
+}
+
+header .nav-holder ul {
+
+    text-align: justify;
+    margin: 0;
+}
+
+
+header .nav-holder nav li {
+    display: inline-block;
+    list-style: none; 
+  position: relative;
+}
+
+
+header .nav-holder nav li a {
+   font-family: 'Montserrat',sans-serif;
+   text-transform: uppercase;
+   font-size: 14px;
+  color: #fff;
+  padding:0 30px 0 0;
+}
+header .top-menu-home-left .nav-holder nav li a:before {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header .top-menu-home-left .nav-holder nav li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+header .top-menu-home-left .nav-holder nav > ul > li{
+  padding: 38px 0 30px;
+}
+
+header .top-menu-home-left .nav-holder nav > ul > li > ul{
+  display: none;
+  position: absolute;
+  left: -10px;
+  top: 58px;
+  padding: 12px 8px;
+  z-index: 9950;  
+  box-shadow: 0 2px 6px -1px #222;
+}
+header .top-menu-home.active .top-menu-home-left .nav-holder nav > ul > li > ul{
+  top: 84px;
+    background: #fff;
+  box-shadow: 0 4px 6px -6px #222;
+}
+header .top-menu-home-left .nav-holder nav > ul > li > ul > li{
+  padding: 0;
+}
+header .top-menu-home-left .nav-holder nav > ul > li > ul > li > a{
+  padding: 0;
+  color: #fff;
+}
+header .top-menu-home.active .top-menu-home-left .nav-holder nav > ul > li > ul > li > a{
+color: #0b4050;
+}
+header .top-menu-home-left .nav-holder nav > ul > li >a:hover ul {
+  display: block;
+}
+
+
+ .nav-holder #menu-button {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    width: 30px;
+    z-index: 1;
+    color: white;
+  cursor: pointer;
+}
+.back-img-home img{
+  width: 100%;
+  height: 830px;
+  object-fit: cover;
+}
+.header-info-box{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 162px;
+  text-align: center;
+}
+.main-logo img{
+  width: 194px;
+  padding-bottom: 42px;
+}
+
+h1{
+  font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.08;
+}
+h2{
+  font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  color: #0b4050;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+h3{
+      font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  font-size: 48px;
+  color: #fff;
+}
+p{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  color: #0b4050;
+  line-height: 1.57;
+}
+.header-info-box p{
+  font-size: 20px;
+  font-weight: 300;
+  padding: 16px 91px 72px;
+  color: #fff;
+}
+.button{
+    padding: 15px 25px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+}
+.button:hover{
+  background: #fff;
+  color: #0b4050;
+  text-decoration: none;
+}
+.btn-blue{
+  background-color: #0b4050;
+}
+.btn-blue:hover{
+  background: #f5a623;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/*MAIN*/
+main{
+  padding: 80px 0;
+}
+
+.main-text p{
+  color: #2a2f3e;
+  line-height: 1.71;
+  text-align: center;
+  padding: 45px 0 30px;
+}
+/*.apartmani-boxes {
+  padding: 50px 0 70px;
+}
+.apartmani-boxes img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apartman-box-blue{
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+.apartman-box-blue p{
+  color: #fff;
+}
+.apartman-box-blue-left{
+  flex: 1;
+}
+
+.apartman-box-blue-right{
+  flex: 1;
+  background-color: #0b4050;
+}
+
+.apartman-box-blue-right-text{
+      padding: 70px 66px;
+      
+}
+
+.apartmani-boxes p{
+  padding: 50px 0;
+}*/
+/*.apartmani-boxes {
+  padding: 50px 0 70px;
+}
+.apartmani-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apartman-box{
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+    background-color: #0b4050;
+}
+.apartman-box p{
+  color: #fff;
+  padding: 50px 0;
+}
+.apartman-box-img{
+  flex: 1;
+}
+
+.apartman-box-text{
+  flex: 1;
+
+}
+
+.apartman-box-text-info{
+      padding: 70px 66px;
+      
+}
+.apartman-box-gray{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.apartman-box-gray-left{
+  flex: 1;
+   background-color: #f0f2f3;
+}
+.apartman-box-gray-left-text{
+  padding: 70px 66px;
+  text-align: right;  
+}
+.apartman-box-gray-left-text h3{
+  color: #0b4050;
+}
+.apartman-box-gray-left-text p{
+  color: #0b4050;
+}
+.btn-gray{
+  border: 1px solid #0b4050;
+  color: #0b4050;
+
+}
+.btn-gray:hover{
+  background: #0b4050;
+  color: #f0f2f3;
+  text-decoration: none;
+}
+
+.apartman-box-gray-right{
+  flex: 1;
+}*/
+
+
+.apartmani-boxes {
+  padding: 50px 0 70px;
+}
+.apartman-box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apartman-box{
+ margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+    background-color: #0b4050;
+}
+.apartman-box p{
+  color: #fff;
+  padding: 50px 0;
+}
+.apartman-box-img{
+  flex: 1;
+}
+.apartman-box-text{
+  flex: 1;
+}
+.apartman-box-text-info{
+      padding: 70px 66px;     
+}
+
+.apartman-box.reverse{
+
+  background-color: #f0f2f3;
+}
+.apartman-box.reverse h3{
+  color: #0b4050;
+}
+.apartman-box.reverse p{
+  color: #0b4050;
+}
+.apartman-box.reverse .button{
+    border: 1px solid #0b4050;
+  color: #0b4050;
+}
+.apartman-box.reverse .button:hover{
+    background: #0b4050;
+  color: #f0f2f3;
+  text-decoration: none;
+}
+
+.apartman-box.reverse .apartman-box-text-info{
+   text-align: right;
+}
+
+
+.o-nama{
+  position: relative;
+}
+.o-nama img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.o-nama-text-box{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    top: 120px;
+}
+.o-nama-text-box h2{
+  color: #fff;
+}
+.o-nama-text-box p {
+  padding: 50px 0 70px;
+  color: #fff;
+}
+.aktuelnosti{
+  padding: 70px 0;
+}
+.aktuelnosti-box{
+  display: flex;
+  flex-direction: row;
+}
+.aktuelnosti-box-left{
+  flex: 1;
+}
+.aktuelnosti-box-left img{
+  width: 100%;
+  height: 100%;
+}
+.aktuelnosti-box-right{
+  flex: 1;
+
+}
+.aktuelnosti h2{
+  padding-bottom: 70px;
+}
+.aktuelnosti-box-right-text h3{
+  color: #0b4050;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 30px;
+}
+.aktuelnosti-box-right-text p{
+  color: #0b4050;
+      padding: 33px;
+}
+.btn-white{
+  border: 1px solid #0b4050;
+  color: #0b4050;
+      margin-left: 34px;
+}
+.btn-white:hover{
+  background: #0b4050;
+  color: #fff;
+  text-decoration: none;
+}
+.preporuke{
+  position: relative;
+  margin-bottom: -3px;
+}
+.preporuke > img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.preporuke h2{
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  color: #fff;
+}
+.preporuke p{
+  color: #fff;
+}
+.preporuke-box-home{
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  text-align: center;
+}
+.preporuke-box-home .slide-box > h3{
+  font-size: 24px;
+}
+.stars-box{
+  padding: 25px 0;
+}
+.stars-box img{
+  display: inline-block;
+  width: 14px;
+  padding: 0 2px;
+}
+.slide-box p{
+  padding-bottom: 28px;
+}
+.slick-slide img{
+  display: inline-block;
+}
+.footer-logo{
+  background:#0b4050;
+  text-align: center; 
+}
+.footer-logo img{
+  padding: 25px 0;
+  width: 96px;
+}
+.footer-box{
+  display: flex;
+  flex-direction: row;
+}
+.footer-box-left{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.footer-box-left img{
+  width: 100%;
+}
+
+.footer-box-left-img-1{
+  flex: 1;
+}
+.footer-box-left-img-2{
+  flex: 1;
+}
+.footer-box-right{
+  flex: 1;
+  position: relative;
+}
+.footer-box-right > img{
+  width: 100%;
+}
+.footer-box-right-info {
+   background: #0b4050;
+  position: absolute;
+  top: 45px;
+  left: 21px;
+  padding: 25px 55px;
+
+}
+.footer-box-right-info:after {
+  content: "";
+  position: absolute;
+  left: 98%;
+  top: 65px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #0b4050;
+  border-bottom: 13px solid transparent;
+ }
+
+  .footer-box-right-info h3{
+    font-size: 24px;
+    padding: 12px 0;
+  }
+  .footer-box-right-info p{
+    padding: 2px 0;
+    color: #fff;
+  }
+  .footer-box-right-info p span{
+    font-weight: bold;
+  }
+  .footer-box-right-pin {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-social-links{
+    text-align: center;
+    background: #0b4050;
+    margin-top: -3px;
+    padding: 25px 0;
+  }
+  .footer-social-links img{
+    padding: 0 5px;
+  }
+
+
+/*PREPORUKE*/
+
+.header-top{
+  height: 315px;
+}
+.top-menu{
+  display: flex;
+  flex-direction: row;
+  height: 84px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0 4px 6px -6px #222;
+}
+.top-menu-left{
+  flex: 1;
+  text-align: center;
+}
+.top-menu-left img{
+  width: 120px;
+}
+.top-menu-center{
+  flex:3;
+    
+}
+
+.top-menu{
+  background: #fff; 
+}
+.top-menu-center .nav-holder .menu{
+  text-align: center;
+}
+header .top-menu-center .nav-holder nav > ul > li{
+  padding: 38px 0 30px;
+  position: relative;
+}
+
+header .top-menu-center .nav-holder nav > ul > li > a{
+   color: #0b4050;
+   font-weight: bold;
+   padding: 0 17px;
+}
+header .top-menu-center .nav-holder nav > ul> li:hover{
+  background: #0b4050;
+}
+header .top-menu-center .nav-holder nav > ul> li:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+header .top-menu-center .nav-holder nav > ul > li > ul{
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 84px;
+  min-width: 124px;
+  padding: 12px 8px;
+  z-index: 9950;  
+  background: #0b4050;
+  box-shadow: 0 4px 6px -6px #fff;
+}
+header .top-menu-center .nav-holder nav > ul > li > ul > li{
+  padding: 0;
+  width: 100%;
+    text-align: center;
+}
+header .top-menu-center .nav-holder nav > ul > li > ul > li > a{
+  padding: 0;
+  color: #0b4050;
+  font-weight: bold;
+}
+header .top-menu-center .nav-holder nav > ul > li >a:hover ul {
+  display: block;
+}
+
+.top-menu-right{
+  flex: 1;
+  text-align: center;
+  padding-top: 26px;
+}
+.top-menu-right img{
+  width: 38px;
+}
+.back-img img{
+  height: 256px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    top: 58px;
+}
+.top-menu-h1{
+  position: absolute;
+  z-index: 2;
+  top: 175px;
+}
+
+
+
+.preporuke-box{
+  padding: 50px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.preporuke-box h3{
+  color: #0b4050;
+  font-size: 24px;
+}
+.preporuke-box p{
+  font-style: italic;
+  padding-bottom: 30px;
+}
+
+/*USLOVI KORISCENJA*/
+.uslovi-koriscenja-main{
+  padding: 80px 0;
+}
+.uslovi-koriscenja-main h2{
+  font-size: 48px;
+  text-align: left;
+  padding: 30px 0;
+}
+.uslovi-koriscenja-main p{
+
+  padding-bottom: 25px;
+}
+
+/*O NAMA*/
+
+
+.o-nama-main h3{
+  font-size: 24px;
+  color: #0b4050;
+  padding-bottom: 25px;
+
+}
+.o-nama-main p{
+
+  padding-bottom: 25px;
+}
+.o-nama-row{
+  padding: 40px 0;
+}
+.o-nama-row img{
+  width: 100%;
+}
+
+/*AKTUELNOSTI*/
+
+
+.aktuelnosti-main h3{
+  color: #0b4050;
+  font-size: 24px;
+  padding-bottom: 25px;
+
+}
+.aktuelnosti-main p{
+  padding-bottom: 34px;
+}
+.aktuelnosti-row{
+  padding: 30px 0;
+}
+.aktuelnosti-row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aktuelnosti-row .btn-white{
+  margin-left: 0;
+
+}
+
+/*KONTAKT*/
+
+.kontakt-info{
+  padding: 40px 14px;
+}
+.kontakt-info-line{
+  padding: 20px 0;
+}
+.kontakt-info-line-img{
+  width: 30px;
+  text-align: center;
+}
+.kontakt-info-line p {
+  padding: 0 10px;
+  font-weight: bold;
+}
+.kontakt-form-box input{
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border: 1px solid #0b4050;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+
+}
+.kontakt-form-box textarea {
+  width: 100%;
+  padding: 12px 15px;
+  height: 240px;
+  border: 1px solid #0b4050;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  margin-bottom: 39px;
+}
+.blue-contact{
+  padding: 15px 65px;
+}
+
+/*APARTMAN*/
+
+.slider-apartman-img{
+  width: 170px;
+  height: 84px;
+  object-fit: cover;
+}
+
+/*APARTMAN SLIDER!*/
+.slider-apartman-box{
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
+}
+
+.slider-apartman-nav img{
+  width: 100%;
+  height: 600px; 
+  object-fit: cover; 
+
+}
+.slider-apartman {
+  width: 100%;
+  padding: 17px 5px;
+  background: #0b4050;
+}
+.slider-apartman img{
+  padding: 0 7px;
+}
+
+.slick-slide{ 
+  outline: none; 
+}
+
+/*///*/
+.apartman-naslov{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+}
+.apartman-naslov-h{
+  flex: 1;
+}
+.apartman-naslov-cena{
+  flex: 1;
+  
+}
+.apartman-main h1{
+  color: #0b4050;
+}
+.apartman-main h2{
+  font-size: 48px;
+  text-align: left;
+}
+.apartman-naslov-cena h2{
+  font-family: 'Montserrat',sans-serif;
+  color: #f5a623;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 5px;
+}
+.apartman-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: #f7f7f7;
+  padding: 18px;
+}
+.apartman-info-line{
+  
+}
+
+.apartman-info-line:after{
+  content: "|";
+  color: #e2e2e2;
+  font-size: 20px;
+    font-family: 'Montserrat', serif;
+    padding:0 4px;
+
+} 
+
+.apartman-info-line:last-child:after{
+  content: none;  
+
+}
+.apartman-info-line-img {
+  width: 34px;
+  text-align: center;
+  display: inline-block;
+}
+.apartman-info-line-p {
+  display: inline-block;
+}
+.apartman-info-line p{
+  color: #828282;
+  font-weight: bold;
+
+}
+.opis h2{
+  padding: 45px 0;
+}
+.opis p{
+  line-height: 1.86;
+  padding-bottom: 25px;
+}
+.opis-info{
+      display: flex;
+    flex-direction: row;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.opis-info-line:after{
+    content: "|";
+  color: #e2e2e2;
+  font-size: 20px;
+    font-family: 'Montserrat', serif;
+    padding: 0 10px 0 7px;
+}
+.opis-info-line:last-child:after{
+  content: none;  
+
+}
+.opis-info-line-img {
+  width: 30px;
+  text-align: left;
+  display: inline-block;
+}
+.opis-info-line-p{
+  display: inline-block;
+}
+.rezervacije-box{
+  background: #f7f7f7;
+  margin-top: 50px;
+  padding: 0 20px 35px;
+}
+.rezervacije-box h2{
+  padding: 25px 0;
+}
+.rezervacije-form{
+  padding:0 1px 35px;
+}
+.rezervacije-form input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 3px 15px;
+  background: #f7f7f7;
+  border: 1px solid #0b4050;
+  
+}
+.btn-orange{
+  background: #f5a623;
+  margin-top: 20px;
+}
+.btn-orange:hover{
+  background: #0b4050;
+  color: #fff;
+}
+.cene-boxes{
+  display: flex;
+      flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.cene-box{
+  min-width: 176px;
+  background: #f7f7f7;
+  margin: 35px 2px;
+  
+}
+.cene-box h2{
+      font-family: 'Montserrat',sans-serif;
+    color: #f5a623;
+    font-style: normal;
+    font-weight: bold;  
+    padding: 20px 15px 7px; 
+}
+.cene-box h2 span{
+  font-size: 14px;
+}
+.cene-box p{
+  padding: 15px;
+}
+
+#cene-box-p-first{
+  background: #0b4050;
+  color: #fff;
+}
+#cene-box-p-second{
+  background:  #1a6b83;
+  color: #fff;    
+}
+.mapa-apartman{
+  position: relative;
+}
+.map-pin{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 180px;
+}
+.mapa-apartman h2{
+  padding: 20px 0 30px;
+}
+.mapa-apartman-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.mapa-apartman p{
+  background: #f7f7f7;
+  color: #828282;
+      padding: 15px;
+    margin-top: -3px;
+}
+.mapa-apartman p span{
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

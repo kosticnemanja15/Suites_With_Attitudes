@@ -1,0 +1,560 @@
+/*HOME PAGE, HEADER, FOOTER*/
+
+@media only screen and (max-width: 1679px ) {
+	.footer-box-right-pin{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1401px ) {
+   header .top-menu-center .nav-holder nav > ul > li > a {
+    padding: 0 10px;
+  }
+  header .top-menu-center .nav-holder nav > ul > li > ul {
+    left: 0;
+    min-width: 163px;
+  }
+}
+@media only screen and (max-width: 1296px ) {
+  header .nav-holder nav li a {
+    padding: 0 14px;
+  }
+}
+@media only screen and (max-width: 1221px ) {
+  header .nav-holder nav li a {
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 1254px ) {
+   header .top-menu-center .nav-holder nav > ul > li > a {
+    padding: 0 8px;
+  }
+}
+
+@media only screen and (max-width: 1212px ) {
+    header .top-menu-center .nav-holder nav > ul > li > a {
+    padding: 0 6px;
+   }
+}
+
+@media only screen and (max-width: 1200px ) {
+  .nav-holder nav {
+    display: none;
+  }
+  .right-icon-menu{
+  	display: none;
+  }
+  .sidr-class-white-icon{
+  	display: none;
+  }
+  header #menu-button{
+  display: block;
+  }
+  .top-menu-home.active{
+ 	height: 84px;
+  }
+
+
+}
+@media only screen and (max-width: 1199px ){
+    .rezervacije-box{
+    width: 50%;
+   }
+}
+@media only screen and (max-width: 1030px ){
+   .slider-apartman img {
+    height: auto;
+  
+    }
+}
+
+@media only screen and (max-width: 991px ) {
+.header-info-box{
+	top: 120px;
+  }
+  .apartman-box{
+  	flex-direction: column;
+  }
+  .apartman-box.reverse{
+  	flex-direction: column-reverse;
+  }
+  .apartmani-boxes img{
+  	margin-bottom: -10px;
+  }
+  .apartman-naslov{
+    flex-direction: column;
+  }
+  .apartman-naslov-h{
+    text-align: center;
+  }
+  .apartman-naslov-cena h2{
+    text-align: center;
+  }
+  .o-nama img{
+    height: 660px;
+  }
+ 
+  .aktuelnosti {
+    padding: 39px 0 55px;
+  }
+  .aktuelnosti h2 {
+    padding-bottom: 45px;
+  }
+  .preporuke{
+  	height: 640px;
+  }
+   .preporuke > img{
+  	height: 640px;
+  }
+  .preporuke h2{
+  	top: 33px;
+  }
+  .preporuke-box-home{
+  	top: 155px;
+  }
+  .footer-box{
+  	flex-direction: column;
+  	height: unset;
+  }
+  .footer-box-right > img {
+    height: 240px;
+  }
+/*  .opis-info{
+    height: 200px;
+  }*/
+
+}
+
+@media only screen and (max-width: 767px ) {
+
+  .header-info-box {
+    top: 105px;
+  }
+   .main-logo img {
+    width: 180px;
+    padding-bottom: 15px;
+  }
+  .header-home {
+  	height: 775px;
+  }
+  .back-img-home img {
+    height: 775px;
+  }
+  h1{
+  	font-size: 55px;
+  }
+  h2{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 45px;
+  }
+  .apartman-main h1{
+    font-size: 55px
+  }
+  .apartman-main h2{
+    font-size: 50px;
+    text-align:center;
+  }
+  .apartman-main h3{
+    font-size: 45px;
+  }
+
+
+  .header-info-box p {
+    font-size: 16px;
+    padding: 16px 91px 45px;
+  }
+  main {
+  	padding: 30px 0;
+  }
+  .apartman-box{
+    text-align: center;
+  }
+  .apartman-box.reverse .apartman-box-text-info {
+    text-align: center;
+  }
+    .o-nama img{
+    height: 680px;
+  }
+  .o-nama-text-box p {
+    padding: 26px 7px 36px;
+    color: #fff;
+  }
+  .aktuelnosti-box{
+  	flex-direction: column;
+  }
+  .aktuelnosti-box-right{
+  	text-align: center;
+  }
+  .aktuelnosti-box-right-text h3{
+  	padding: 0;
+  }
+  .aktuelnosti-box-right-text p {
+    padding: 10px 5px;
+   }
+   .aktuelnosti-row{
+    text-align: center;
+   }
+   .btn-white{
+   	margin-left: 0;
+   }
+
+
+   .preporuke-box-home {
+    top: 142px;
+   }
+   .stars-box {
+    padding: 16px 0;
+   }
+   .footer-box-left {
+    height: 200px;
+   }
+   .footer-box-right-info {
+    padding: 9px 26px 20px;
+   }
+      .rezervacije-box{
+    width: auto;
+    margin-top: 10px;
+    text-align: center;
+   }
+   .cene-box {
+    min-width: 100%;   
+    margin: 6px 2px;
+    text-align: center;
+   }
+   .cene-box h2 {
+    text-align: center;
+   }
+
+}
+@media only screen and (max-width: 565px ){
+   .footer-box-right-info{
+    display: none;
+   }
+   .footer-box-right-info:after{
+    display: none;
+   }
+   .footer-box-right-info.mobile{
+    display: block;
+    margin-top: -7px;
+   }
+   .footer-box-right > img {
+    object-position: unset;
+   }
+}
+
+@media only screen and (max-width: 544px ){
+
+   .o-nama-text-box {
+    padding: 25px 0 65px;
+   }
+}
+@media only screen and (max-width: 485px ){
+       .o-nama img{
+    height: 730px;
+   }
+}
+@media only screen and (max-width: 499px ) {
+   
+   .top-menu-home.active {
+    height: 55px;
+   }
+    .top-menu {
+    height: 55px;
+   }
+   .top-menu-left img {
+    width: 80px;
+   }
+    header #menu-button{
+    	top: 10px;
+    }
+
+   .header-info-box {
+    top: 88px;
+   }
+   .main-logo img {
+    width: 160px;
+    padding-bottom: 10px;
+   }
+   .header-info-box p {
+    font-size: 14px;
+    padding: 23px 34px 42px;
+   }
+   .header-home{
+   	height: 712px;
+   }
+   .back-img-home img {
+    height: 712px;
+   }
+   .apartmani-boxes {
+    padding: 40px 0;
+   }
+   .main-text p {
+    line-height: 1.52;
+    padding: 28px 0 14px;
+   }
+   .apartman-box-text-info {
+    padding: 42px 32px;
+   }
+   .apartmani-boxes p {
+    padding: 35px 0;
+   }
+
+
+   .aktuelnosti h2 {
+    padding-bottom: 25px;
+   }
+   .preporuke-box-home {
+    top: 130px;
+   }
+
+
+
+} 
+
+@media only screen and (max-width: 466px ) {
+.header-home{
+	height: 687px;
+}
+.back-img-home img {
+    height: 687px;
+}
+.o-nama img{
+  height: 700px;
+}
+
+
+.o-nama-text-box p {
+    padding: 7px 1px 16px;
+    color: #fff;
+}
+
+
+
+
+}
+@media only screen and (max-width: 432px ){
+   h1{
+    font-size: 45px ;
+   }
+   h2{
+    font-size: 38px;
+   }
+   h3{
+    font-size: 33px;
+   }
+   .apartman-main h1 {
+    font-size: 45px;
+   }
+   .apartman-main h2{
+    font-size: 38px;
+   }
+   .apartman-main h3{
+    font-size: 33px;
+   }
+   .content h1{
+    font-size: 45px;
+   }
+   .content h2{
+    font-size: 38px;
+   }
+   .content h3{
+    font-size: 33px;
+   }
+}
+@media only screen and (max-width: 426px ){
+  .footer-box-left {
+    height: 150px;
+  }
+  .stars-box {
+    padding: 6px 0;
+  }
+  .slide-box p {
+    padding-bottom: 12px;
+  }
+  .footer-box-right-info {
+    padding: 9px 12px 14px;
+    top: 8px;
+    left: 8px;
+  }
+  .footer-box-right-info:after {
+    content: "";
+    position: absolute;
+     left: 78%; 
+    top: 88%;
+    /* top: 65px; */
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 26px solid #0b4050;
+    border-bottom: 23px solid transparent;
+    right: 84px;
+}
+  .footer-box-right-info h3 {
+    font-size: 20px;
+    padding: 6px 0;
+  }
+  .footer-box-right-info p {
+    padding: 0px;
+   }
+}
+@media only screen and (max-width: 414px ) {
+   
+   .header-top {
+    height: 270px;
+   }
+   .back-img img {
+    height: 200px;
+   }
+
+  .top-menu-h1 {
+    top: 125px;
+    width: 100%;
+    text-align: center;
+  }
+  .slider-apartman-box{
+    margin-top: -110px;
+  }
+  .o-nama img{
+    height: 750px;
+  }
+
+  .footer-box-left{
+    flex-direction: column;
+    height: unset;
+  }
+  .footer-box-left img {
+    height: 190px; 
+    margin-bottom: -10px;
+  }
+  .footer-box-right > img{
+    height: 190px;
+  }
+  .kontakt-info-line {
+    padding: 6px 0;
+  }
+     .kontakt-main p{
+    text-align: center;
+   }
+}
+@media only screen and (max-width: 397px ){
+  .o-nama img{
+    height: 780px;
+  }
+}
+@media only screen and (max-width: 385px ) {
+  .header-info-box {
+    top: 70px;
+  }
+  .main-logo img {
+    width: 145px;
+  }
+  .header-info-box p {
+    padding: 15px 33px 38px;
+  }
+  .header-home{
+    height: 650px;
+  }
+  .back-img-home img {
+    height: 650px;
+  }
+    .o-nama img{
+    height: 810px;
+  }
+
+  .apartman-box-text-info {
+    padding: 40px 15px;
+  }
+
+
+}
+ @media only screen and (max-width: 367px ) {
+  .o-nama img{
+    height: 820px;
+  }
+ }
+
+
+@media only screen and (max-width: 360px ) {
+  h1{
+    font-size: 43px;
+  }
+  .main-text p {
+    padding: 20px 0 9px;
+  }
+  .apartmani-boxes {
+    padding: 20px 0;
+  }
+  .aktuelnosti {
+    padding: 50px 0 55px;
+  }
+
+  p {
+    line-height: 1.37;
+  }
+
+  .footer-box-right-info:after{
+    top: 86%;
+  }
+  .footer-box-right-info p {
+    font-size: 12px;
+  }
+    .kontakt-info {
+    padding: 25px 14px;
+  }
+
+  .kontakt-info-line-img {
+    width: 100%;
+    text-align: center;
+  }
+  .kontakt-info-line p {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 331px ) {
+  .o-nama-text-box {
+    padding: 10px 0 65px;
+  }
+}
+
+@media only screen and (max-width: 320px ) {
+  .header-info-box p {
+    padding: 15px 33px 20px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

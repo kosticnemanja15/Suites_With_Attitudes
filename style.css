@@ -1,0 +1,1186 @@
+/*
+Theme Name: WP_Ogitive
+Theme URI: http://ww.ogitive.com
+Author: Ogitive
+Author URI: http://www.ogitive.com
+Description: Blank template
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpog
+Tags:
+*/
+
+
+
+
+
+
+/*STYLE CSS*/
+
+
+
+/*HOME*/
+
+
+/*HEADER*/
+
+body{
+ overflow-x: hidden;  
+}
+header{
+ 
+  position: relative;
+}
+.gradient{
+     position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#07090d+0,07090d+100&0.4+0,0.4+48,0.4+100 */
+background: -moz-linear-gradient(top, rgba(7,9,13,0.4) 0%, rgba(7,9,13,0.4) 48%, rgba(7,9,13,0.4) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(7,9,13,0.4) 0%,rgba(7,9,13,0.4) 48%,rgba(7,9,13,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(7,9,13,0.4) 0%,rgba(7,9,13,0.4) 48%,rgba(7,9,13,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6607090d', endColorstr='#6607090d',GradientType=0 ); /* IE6-9 */;
+}
+.page-template-page-apartman-php > .header-top > .top-menu-h1{
+  display: none;
+} 
+.header-home{
+  height: 830px;
+}
+.top-menu-home{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  
+  transition: .5s linear;  
+}
+.top-menu-home a:hover{
+  text-decoration: none;
+}
+.top-menu-home.active{
+  background: #fff; 
+  box-shadow: 0 4px 9px -6px #222;
+}
+.top-menu-home.active nav li a{
+   color: #0b4050;
+   font-weight: bold;
+}
+.top-menu-home-flex{
+  /*display: flex;*/
+}
+.top-menu-home-left{
+  display: inline-block;
+ /*flex: 3;*/
+}
+
+.top-menu-home-right{
+  display: inline-block;
+  float: right;
+  padding-top: 37px;
+  /*flex: 1;*/
+}
+.top-menu-home-right img{
+  width: 30px;
+}
+.top-menu-home .top-menu-home-right .white-icon img{
+  display: inline-block;
+}
+.top-menu-home .top-menu-home-right .blue-icon img{
+  display: none;
+}
+.top-menu-home.active .top-menu-home-right .white-icon img{
+  display: none;
+}
+.top-menu-home.active .top-menu-home-right .blue-icon img{
+  display: inline-block;
+}
+
+header .nav-holder ul {
+
+    text-align: right;
+    margin: 0;
+}
+
+
+header .nav-holder nav li {
+    display: inline-block;
+    list-style: none; 
+  position: relative;
+}
+
+
+header .nav-holder nav li a {
+   font-family: 'Montserrat',sans-serif;
+   text-transform: uppercase;
+   font-size: 14px;
+  color: #fff;
+  padding:0 16px;
+}
+header .nav-holder nav li a:before {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header .nav-holder nav li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+header .nav-holder nav > ul > li{
+  padding: 30px 0;
+}
+header .nav-holder nav > ul > li:hover{
+  background: #0b4050;
+  color: #fff;
+}
+header .top-menu-home.active .nav-holder nav > ul > li:hover a{
+  color: #fff;
+}
+
+.sub-menu{
+  opacity: 1;
+}
+header .nav-holder nav > ul > li > ul{
+  display: none;
+  position: absolute;
+  opacity: 1;
+  min-width: 165px;
+  top: 59px;
+  padding: 10px 16px;
+  z-index: 9950;  
+  background: #0b4050;
+  box-shadow: 0 2px 6px -1px #222;
+  text-align: left;
+}
+header .top-menu-home.active .top-menu-home-left .nav-holder nav > ul > li > ul{
+  top: 62px;
+    background: #0b4050;
+  box-shadow: 0 8px 9px -6px #222;
+}
+header .nav-holder nav > ul > li > ul > li{
+  padding: 0;
+}
+
+header .nav-holder nav > ul > li > ul > li > a{
+  padding: 0;
+  color: #fff;
+}
+header .top-menu-home.active .nav-holder nav > ul > li > ul > li > a{
+color: #0b4050;
+
+}
+header .nav-holder nav > ul > li > a:hover ul {
+  display: block;
+  /*opacity: 1;*/
+}
+
+
+ header #menu-button {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 1;
+    color: white;
+   cursor: pointer;
+}
+header #menu-button.active-menu-btn{
+  color: #0b4050;
+  
+}
+.header-top #menu-button {
+    color: #0b4050;
+}
+.back-img-home img{
+  width: 100%;
+  height: 830px;
+  object-fit: cover;
+}
+.header-info-box{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 162px;
+  text-align: center;
+}
+.main-logo img{
+  width: 194px;
+  padding-bottom: 42px;
+}
+
+h1{
+  font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.08;
+}
+h2{
+  font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  color: #0b4050;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+h3{
+      font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  font-size: 48px;
+  color: #fff;
+}
+p{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  color: #0b4050;
+  line-height: 1.57;
+}
+.header-info-box p{
+  font-size: 20px;
+  font-weight: 300;
+  padding: 16px 91px 72px;
+  color: #fff;
+}
+.button{
+    padding: 15px 25px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+}
+.button:hover{
+  background: #fff;
+  color: #0b4050;
+  text-decoration: none;
+}
+.btn-blue{
+  background-color: #0b4050;
+}
+.btn-blue:hover{
+  background: #f5a623;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/*MAIN*/
+main{
+  padding: 80px 0;
+}
+
+.main-text p{
+  color: #2a2f3e;
+  line-height: 1.71;
+  text-align: center;
+  padding: 45px 0 30px;
+}
+/*.apartmani-boxes {
+  padding: 50px 0 70px;
+}
+.apartmani-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apartman-box{
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+    background-color: #0b4050;
+}
+.apartman-box p{
+  color: #fff;
+  padding: 50px 0;
+}
+.apartman-box-img{
+  flex: 1;
+}
+
+.apartman-box-text{
+  flex: 1;
+
+}
+
+.apartman-box-text-info{
+      padding: 70px 66px;
+      
+}
+
+
+.apartman-box-gray{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.apartman-box-gray-left{
+  flex: 1;
+   background-color: #f0f2f3;
+}
+.apartman-box-gray-left-text{
+  padding: 70px 66px;
+  text-align: right;  
+}
+.apartman-box-gray-left-text h3{
+  color: #0b4050;
+}
+.apartman-box-gray-left-text p{
+  color: #0b4050;
+}
+.btn-gray{
+  border: 1px solid #0b4050;
+  color: #0b4050;
+
+}
+.btn-gray:hover{
+  background: #0b4050;
+  color: #f0f2f3;
+  text-decoration: none;
+}
+
+.apartman-box-gray-right{
+  flex: 1;
+}*/
+
+.apartmani-boxes {
+  padding: 50px 0 70px;
+}
+.apartman-box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apartman-box{
+ margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+    background-color: #0b4050;
+}
+.apartman-box p{
+  color: #fff;
+  padding: 50px 0;
+}
+.apartman-box-img{
+  flex: 1;
+}
+.apartman-box-text{
+  flex: 1;
+}
+.apartman-box-text-info{
+      padding: 70px 66px;     
+}
+
+.apartman-box.reverse{
+
+  background-color: #f0f2f3;
+}
+.apartman-box.reverse h3{
+  color: #0b4050;
+}
+.apartman-box.reverse p{
+  color: #0b4050;
+}
+.apartman-box.reverse .button{
+    border: 1px solid #0b4050;
+  color: #0b4050;
+}
+.apartman-box.reverse .button:hover{
+    background: #0b4050;
+  color: #f0f2f3;
+  text-decoration: none;
+}
+
+.apartman-box.reverse .apartman-box-text-info{
+   text-align: right;
+}
+
+
+.o-nama{
+  position: relative;
+  height: auto;
+}
+.o-nama img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+}
+.o-nama-text-box{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0 65px;
+}
+.o-nama-text-box h2{
+  color: #fff;
+}
+.o-nama-text-box p {
+  padding: 50px 0 70px;
+  color: #fff;
+}
+.aktuelnosti{
+  padding: 70px 0;
+}
+.aktuelnosti-box{
+  display: flex;
+  flex-direction: row;
+}
+.aktuelnosti-box-left{
+  flex: 1;
+}
+.aktuelnosti-box-left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aktuelnosti-box-right{
+  flex: 1;
+
+}
+.aktuelnosti h2{
+  padding-bottom: 70px;
+}
+.aktuelnosti-box-right-text h3{
+  color: #0b4050;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 30px;
+}
+.aktuelnosti-box-right-text a:hover{
+  text-decoration: none;
+  
+}
+.aktuelnosti-box-right-text p{
+  color: #0b4050;
+      padding:23px 33px;
+}
+.btn-white{
+  border: 1px solid #0b4050;
+  color: #0b4050;
+      margin-left: 34px;
+}
+.btn-white:hover{
+  background: #0b4050;
+  color: #fff;
+  text-decoration: none;
+}
+.preporuke{
+  position: relative;
+  height: 670px;
+}
+.preporuke > img{
+  width: 100%;
+  height: 670px;
+  object-fit: cover;
+}
+
+.preporuke h2{
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  color: #fff;
+  
+
+}
+.preporuke p{
+  color: #fff;
+}
+.preporuke-box-home{
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  text-align: center;
+}
+.preporuke-box-home .slide-box > h3{
+  font-size: 24px;
+}
+.stars-box{
+  padding: 12px 0;
+}
+.stars-box img{
+  display: inline-block;
+  width: 14px;
+  padding: 0 2px;
+}
+.slide-box p{
+  padding-bottom: 20px;
+}
+.slick-slide img{
+  display: inline-block;
+}
+
+
+
+
+.footer-logo{
+  background:#0b4050;
+  text-align: center; 
+}
+.footer-logo img{
+  padding: 25px 0;
+  width: 96px;
+}
+.footer-box{
+  display: flex;
+  flex-direction: row;
+  height: 246px;
+}
+.footer-box-left{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.footer-box-left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-box-left-img-1{
+  flex: 1;
+}
+.footer-box-left-img-2{
+  flex: 1;
+}
+.footer-box-right{
+  flex: 1;
+  position: relative;
+}
+.footer-box-right > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.footer-box-right-info {
+   background: #0b4050;
+  position: absolute;
+  top: 45px;
+  left: 21px;
+  padding: 17px 55px 25px;
+
+}
+.footer-box-right-info.mobile{
+  display: none;
+  position: unset;
+  text-align: center;
+}
+.footer-box-right-info:after {
+  content: "";
+  position: absolute;
+  left: 98%;
+  top: 65px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #0b4050;
+  border-bottom: 13px solid transparent;
+ }
+
+  .footer-box-right-info h3{
+    font-size: 24px;
+    padding: 12px 0;
+  }
+  .footer-box-right-info p{
+    padding: 2px 0;
+    color: #fff;
+  }
+  .footer-box-right-info p span{
+    font-weight: bold;
+  }
+  .footer-box-right-pin {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-social-links{
+    text-align: center;
+    background: #0b4050;
+    margin-top: -10px;
+    padding: 25px 0;
+  }
+  .footer-social-links img{
+    padding: 0 5px;
+  }
+
+
+/*PREPORUKE*/
+
+.header-top{
+  height: 315px;
+}
+.top-menu{
+  display: flex;
+  flex-direction: row;
+  height: 84px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0 4px 9px -6px #222;
+}
+.top-menu-left{
+  flex: 1;
+  text-align: center;
+}
+.top-menu-left img{
+  width: 120px;
+}
+.top-menu-center{
+  flex:4;
+  text-align: center;
+    
+}
+
+.top-menu{
+  background: #fff; 
+}
+.top-menu-center .nav-holder .menu{
+  text-align: center;
+}
+header .top-menu .top-menu-center .nav-holder ul {
+
+    text-align: center;
+    margin: 0;
+}
+header .top-menu-center .nav-holder nav > ul > li{
+  padding: 23px 0;
+  position: relative;
+}
+
+header .top-menu-center .nav-holder nav > ul > li > a{
+   color: #0b4050;
+   font-weight: bold;
+   padding: 0 17px;
+}
+header .top-menu-center .nav-holder nav > ul> li:hover{
+  background: #0b4050;
+  
+}
+header .top-menu-center .nav-holder nav > ul> li:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+header .top-menu-center .nav-holder nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 59px;
+    min-width: 165px;
+    padding: 12px 12px;
+    z-index: 9950;
+    background: #0b4050;
+    box-shadow: 0 2px 6px -1px #222;
+
+}
+header .top-menu-center .nav-holder nav > ul > li > ul > li{
+  padding: 0;
+  width: 100%;
+    text-align: center;
+}
+header .top-menu-center .nav-holder nav > ul > li > ul > li > a{
+  padding: 0;
+  color: #0b4050;
+  font-weight: bold;
+}
+header .top-menu-center .nav-holder nav > ul > li >a:hover ul {
+  display: block;
+}
+
+.top-menu-right{
+  flex: 1;
+  text-align: center;
+  padding-top: 30px;
+}
+.top-menu-right img{
+  width: 30px;
+}
+.back-img img{
+  height: 256px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    top: 58px;
+}
+.top-menu-h1{
+  position: absolute;
+  z-index: 2;
+  top: 175px;
+}
+
+
+
+.preporuke-box{
+  padding: 50px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.preporuke-box h3{
+  color: #0b4050;
+  font-size: 24px;
+}
+.preporuke-box p{
+  font-style: italic;
+  padding-bottom: 30px;
+}
+
+/*USLOVI KORISCENJA*/
+.uslovi-koriscenja-main{
+  padding: 80px 0;
+}
+.uslovi-koriscenja-main h2{
+  font-size: 48px;
+  text-align: left;
+  padding: 30px 0;
+}
+.uslovi-koriscenja-main p{
+
+  padding-bottom: 25px;
+}
+
+/*O NAMA*/
+
+
+.o-nama-main h3{
+  font-size: 24px;
+  color: #0b4050;
+  padding-bottom: 25px;
+
+}
+.o-nama-main p{
+
+  padding-bottom: 25px;
+}
+.o-nama-row{
+  padding: 40px 0;
+}
+.o-nama-row img{
+  width: 100%;
+}
+
+/*AKTUELNOSTI*/
+
+
+.aktuelnosti-main h3{
+  color: #0b4050;
+  font-size: 24px;
+  padding-bottom: 25px;
+
+}
+.aktuelnosti-main a:hover{
+  text-decoration: none;
+}
+.aktuelnosti-main p{
+  padding-bottom: 34px;
+}
+.aktuelnosti-row{
+  padding: 30px 0;
+}
+.aktuelnosti-row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aktuelnosti-row .btn-white{
+  margin-left: 0;
+
+}
+
+/*KONTAKT*/
+
+.kontakt-info{
+  padding: 40px 14px;
+}
+.kontakt-info-line{
+  padding: 12px 0;
+}
+.kontakt-info-line-img{
+  width: 30px;
+  text-align: center;
+}
+.kontakt-info-line p {
+  padding: 10px;
+  font-weight: bold;
+}
+.kontakt-form-box input{
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border: 1px solid #0b4050;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+
+}
+.kontakt-form-box textarea {
+  width: 100%;
+  padding: 12px 15px;
+  height: 240px;
+  border: 1px solid #0b4050;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  margin-bottom: 39px;
+}
+.blue-contact{
+  padding: 15px 65px;
+}
+.wpcf7-form label{
+  width: 100%;
+  font-family: 'Montserrat',sans-serif;
+
+}
+.kontakt-form-box .wpcf7-submit{
+  padding: 15px 65px;
+  width: auto;
+  background: #0b4050;
+      border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+}
+.formtext{
+  height: 240px;
+}
+.formtext::placeholder{
+  align-items: top;
+}
+
+/*APARTMAN*/
+
+.slider-apartman img {
+  width: 100%;
+  height: 84px;
+  object-fit: cover;
+}
+
+/*APARTMAN SLIDER!*/
+.slider-apartman-box {
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
+  background: #fff;
+}
+.slider-apartman-nav {
+  width: 100%;
+}
+.slider-apartman-nav img {
+  width: 100%;
+/*  height: 600px; 
+  object-fit: cover; */
+  border: 2px solid #fff;
+
+}
+.slider-apartman {
+  width: 100%;
+  padding: 14px 5px 4px;
+  background: #0b4050;
+  border: 2px solid #fff;
+  margin-top: -12px;
+}
+.slider-apartman-img-border{
+  padding: 0 7px;
+}
+.slider-apartman img {
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.slick-slide { 
+  outline: none; 
+}
+
+
+/*///*/
+.apartman-naslov {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+}
+.apartman-naslov-h {
+  flex: 1;
+}
+.apartman-naslov-cena{
+  flex: 1;
+  
+}
+.apartman-main h1 {
+  color: #0b4050;
+}
+.apartman-main h2{
+  font-size: 48px;
+  text-align: left;
+}
+.apartman-naslov-cena h2{
+  font-family: 'Montserrat',sans-serif;
+  color: #f5a623;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 5px;
+}
+.apartman-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: #f7f7f7;
+  padding: 8px 12px;
+}
+.apartman-info-line{
+  
+}
+
+.apartman-info-line:after{
+  content: "|";
+  color: #e2e2e2;
+  font-size: 20px;
+    font-family: 'Montserrat', serif;
+    padding:0 4px;
+
+} 
+
+.apartman-info-line:last-child:after{
+  content: none;  
+
+}
+.apartman-info-line-img {
+  width: 27px;
+  text-align: center;
+  display: inline-block;
+}
+.apartman-info-line-p {
+  display: inline-block;
+}
+.apartman-info-line p{
+  color: #828282;
+  font-weight: bold;
+
+}
+.opis h2{
+  padding: 45px 0;
+}
+.opis p{
+  line-height: 1.86;
+  padding-bottom: 25px;
+}
+.opis-info{
+      display: flex;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.opis-info-line:after{
+    content: "|";
+  color: #e2e2e2;
+  font-size: 20px;
+    font-family: 'Montserrat', serif;
+    padding: 0 10px 0 7px;
+}
+.opis-info-line:last-child:after{
+  content: none;  
+
+}
+.opis-info-line-img {
+  width: 17px;
+  text-align: left;
+  display: inline-block;
+}
+.opis-info-line-p{
+  display: inline-block;
+}
+.rezervacije-box{
+  background: #f7f7f7;
+  margin-top: 50px;
+  padding: 0 20px 0px;
+}
+.rezervacije-box h2{
+  padding: 25px 0;
+}
+.rezervacije-form{
+  padding:0 1px 35px;
+}
+.rezervacije-form input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 3px 15px;
+  background: #f7f7f7;
+  border: 1px solid #0b4050;
+  color: #404040;
+  font-size: 14px;
+  
+}
+.btn-orange {
+  background: #f5a623;
+  margin-top: 20px;
+}
+.btn-orange:hover{
+  background: #0b4050;
+  color: #fff;
+}
+.cene{
+  margin-top: 30px;
+}
+.cene-boxes {
+  display: flex;
+      flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.cene-box {
+  min-width: 212px;
+  background: #f7f7f7;
+  margin: 35px 2px;
+  
+}
+.cene-box h2{
+      font-family: 'Montserrat',sans-serif;
+    color: #f5a623;
+    font-style: normal;
+    font-weight: bold;  
+    padding: 20px 15px 7px; 
+}
+.cene-box h2 span{
+  font-size: 14px;
+}
+.cene-box p{
+  padding: 15px;
+}
+
+#cene-box-p-first{
+  background: #0b4050;
+  color: #fff;
+}
+#cene-box-p-second{
+  background:  #1a6b83;
+  color: #fff;    
+}
+.mapa-apartman{
+  position: relative;
+}
+.map-pin{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 180px;
+}
+.mapa-apartman h2{
+  padding: 20px 0 30px;
+}
+.mapa-apartman-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.mapa-apartman p{
+  background: #f7f7f7;
+  color: #828282;
+      padding: 15px;
+    margin-top: -3px;
+}
+.mapa-apartman p span{
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+
+
+.page-template-page-apartman .wpcf7-submit {
+    padding: 15px 25px 31px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+    background: #f5a623;
+    margin-top: 20px;
+    width: 206px;
+    height: 
+}
+
+.page-template-page-apartman .wpcf7-submit:hover {
+    background: #0b4050;
+    color: #fff;
+}
+
+#dateform::placeholder span {
+ 
+}
+
+#dateform::before {
+  content: "Dates souhaitées" !important;
+  margin-right: 10px;
+   color: #404040;
+}
+
+.date-941 #dateform::before {
+    content: "Dates souhaitées" !important;
+}
+
+
+
+
+
+
+/****SKOLS********/
+.content ul {
+  margin-top: 24px;
+}
+.content ul li {
+   list-style-type: disc;
+   font-size: 16px;
+   margin-left: 24px;
+   margin-top: 12px;
+    color: #0b4050;
+}
+.content h3 {
+  color: #0b4050;
+  float: left;
+  font-size: 38px;
+  width: 100%;
+  margin-top: 32px;
+}
+.content h4 {
+  color: #0b4050;
+  margin-bottom: 18px;
+}
+ .apartman-main ul li {
+   list-style-type: disc;
+   font-size: 16px;
+   margin-left: 24px;
+   margin-top: 12px;
+   color: #0b4050;
+  }
+
+.lokacija-text p {
+  margin-top: 116px;
+}
+.desc_box {
+  margin-top: 24px;
+}
+
+.page-template-page-apartman h1 {
+    display: none;
+}
+.apartman-main h1 {
+  display: block;
+}
+.single .content {
+  margin: 60px 0 100px;
+}
+.top-menu-left img {
+  margin-top: -6px;
+}
+
+/****SKOLS********/
+
